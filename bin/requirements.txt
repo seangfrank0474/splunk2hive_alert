@@ -1,0 +1,15 @@
+requests
+python-magic
+pypandoc
+future
+pytest
+sys
+json
+time
+uuid
+os
+gzip
+csv
+string
+re
+mock;python_version<='2.7'

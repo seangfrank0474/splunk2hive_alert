@@ -1,0 +1,19 @@
+<setup>
+  <block title="Custom Alerts">
+        <text>Configure Splunk2Hive_alert Server Settings</text>
+    </block>
+    <block title="Server" endpoint="admin/alert_actions" entity="splunk2hive_alert">
+        <input field="param.url">
+            <label>The Hive Project Server (ex. https://example.com/thehive)</label>
+            <type>text</type>
+        </input>
+        <input field="param.api_key">
+            <label>The Hive Project User API Key</label>
+            <type>text</type>
+        </input>
+		<input field="param.cert_check">
+            <label>Verify cert authenticity on The Hive Project Server(True/False)</label>
+            <type>text</type>
+        </input>
+    </block>
+</setup>

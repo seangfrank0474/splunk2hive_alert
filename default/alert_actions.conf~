@@ -1,0 +1,21 @@
+# Custom alert config file for splunk2hive_alert app 
+[script]
+filename = splunk2hive_alert.py
+
+[lookup]
+filename = splunk2hive_alert.csv
+append = 1
+
+[splunk2hive_alert]
+is_custom = 1
+label = Splunk2Hive Alert Action
+description = Automate alert creation in theHive from events triggered by Splunk
+icon_path = thehive_logo_small.png
+payload_format = json
+disabled = 0
+param.content_type = Content-Type: application/json
+
+# Parameters that need to be configured
+param.url = {url} # URL example (http://<hive_server>:<api_port> --> http://myhive.example.com:9800)
+param.api_key = {api key} # API key that can be generated when the API user is created 
+
