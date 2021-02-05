@@ -40,7 +40,7 @@ def Splunk2HiveArtifactParse(key, value, observ_keys_list, artifacts):
 
 def Splunk2HiveAPI(csv_rows, config):
     url = config.get('url') 
-	splunk_api = config.get('api_key')
+    splunk_api = config.get('api_key')
     cert_check = config.get('cert_check')
     observable_keys=config.get('obsrv_key')
     api = TheHiveApi(url, splunk_api, cert=cert_check)
