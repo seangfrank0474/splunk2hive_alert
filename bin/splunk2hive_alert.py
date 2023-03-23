@@ -47,7 +47,7 @@ def Splunk2HiveAPI(csv_rows, config):
     refnum = str(uuid.uuid4())[0:12]
     sourceRef = "Hive_Alert_ref-"+refnum
     #observable_keys = 'nsp_src_ip nsp_dest_ip'
-    #api = TheHiveApi('https://ahsirazurehivesub001.eastus2.cloudapp.azure.com/thehive', 'WbjPbXWqea6lsNGC/riDpFkhpWwaAGP1', cert=False)
+    #api = TheHiveApi('https://example.com/thehive', 'APIKeyGoesHere', cert=False)
     parsed_rows = {key: value for key, value in csv_rows.items()}
     artifacts = []
     for key, value in parsed_rows.items():
